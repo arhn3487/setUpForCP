@@ -1,0 +1,1 @@
+//In this file paste the brute-force code which is being accepted
