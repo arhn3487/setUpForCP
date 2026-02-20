@@ -24,35 +24,7 @@ inline ll lcm(ll a, ll b) { return (a * b) / __gcd(a, b); }
 
 void solve() 
 {
-    int n,now=0,ans=0;cin>>n;
-    vector<int> v(n),vv(n,0);
-
-    for(auto &x : v) cin>>x;
-    for(int i=0;i<n/2;i++)
-    {
-        //debug(v[i],v[n-i-1]);
-        if(v[i]<v[n-i-1]) vv[i]=v[n-i-1]-v[i];
-        else if(v[i]>v[n-i-1]) vv[n-i-1]=-v[n-i-1]+v[i];
-    }
-
-    debug(vv);
-
-    for(int i=0;i<n;i++)
-    {
-        if(vv[i]>=now )
-        {
-            ans+=(vv[i]-now);
-            now=vv[i];
-        }
-        else 
-        {
-            now=vv[i];
-        }
-        //else if(vv[i]==0) now=0;
-        
-    }
-
-    print(ans)
+    
 }
 
 int32_t main() {
